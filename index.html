@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wholesale Builder Beam | Trade-Only Box Beams, Oklahoma Made</title>
+<meta name="description" content="Trade-only reclaimed-look box beams, Oklahoma Made. Builder pricing per linear foot, prestained or unfinished, freight estimate by ZIP.">
+<meta name="robots" content="noindex"><!-- remove at launch -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar"><div class="in">
+  <a class="logo" href="#top"><img src="favicon.svg" alt="" width="28" height="28"><span data-brand>Wholesale Builder Beam</span></a>
+  <a class="cta" href="#order">Order</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="in">
+  <p class="kicker">Trade only &middot; Oklahoma Made</p>
+  <h1>Box beams for builders who need them right the first time.</h1>
+  <p class="lead">Three-sided reclaimed-look box beams, built to your height, width and length. Prestained to your spec or unfinished for your painter. Wholesale per-foot pricing for home builders, GCs and remodelers.</p>
+  <a class="btn" href="#order">Start an order</a>
+</div></section>
+
+<section class="gallery in" aria-label="Beam photos">
+  <figure><img src="beam-placeholder.svg" alt="Box beam photo coming soon" loading="lazy" width="400" height="300"><figcaption>Great room ceiling</figcaption></figure>
+  <figure><img src="beam-placeholder.svg" alt="Box beam photo coming soon" loading="lazy" width="400" height="300"><figcaption>Kitchen run</figcaption></figure>
+  <figure><img src="beam-placeholder.svg" alt="Box beam photo coming soon" loading="lazy" width="400" height="300"><figcaption>Finish samples</figcaption></figure>
+</section>
+
+<section class="points in">
+  <div><h3>Your sizes</h3><p>Heights and widths from 4" to 12". Lengths up to 24 ft per piece.</p></div>
+  <div><h3>Your finish</h3><p>Tell us the stain brand, type and color and we match it, or take them raw.</p></div>
+  <div><h3>To the jobsite</h3><p>Crated freight anywhere in the lower 48, local delivery near Norman, or pickup.</p></div>
+  <div><h3>Trade pricing</h3><p>One per-foot rate by size. Price and freight estimate shown as you fill the form.</p></div>
+</section>
+
+<section id="order" class="order in">
+  <h2>Order form</h2>
+  <p class="note">Freight is an estimate. We confirm the final freight quote before you pay.</p>
+  <form id="f" novalidate>
+    <fieldset><legend>Contact</legend>
+      <label>Contact name<input name="contact" required autocomplete="name"></label>
+      <label>Company<input name="company" required autocomplete="organization"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+    </fieldset>
+
+    <fieldset><legend>Beam size</legend>
+      <div class="two">
+        <label>Height (in)<select name="h" id="h"><option>4</option><option>6</option><option selected>8</option><option>10</option><option>12</option></select></label>
+        <label>Width (in)<select name="w" id="w"><option>4</option><option>6</option><option selected>8</option><option>10</option><option>12</option></select></label>
+      </div>
+      <p class="hint">Larger than 12"? Note it below and we'll quote it.</p>
+    </fieldset>
+
+    <fieldset><legend>Lengths</legend>
+      <div id="lines"></div>
+      <button type="button" class="link" id="addLine">+ Add another length</button>
+      <p class="total">Total: <b id="lfOut">0</b> linear ft &middot; <span id="pcOut">0</span> beams</p>
+    </fieldset>
+
+    <fieldset><legend>Finish</legend>
+      <label class="radio"><input type="radio" name="finish" value="prestained" checked> Prestained</label>
+      <label class="radio"><input type="radio" name="finish" value="unfinished"> Unfinished</label>
+      <div id="stain">
+        <label>Stain brand<input name="stainBrand" placeholder="e.g. Minwax, Sherwin-Williams"></label>
+        <label>Stain type<select name="stainType"><option value="">Choose</option><option>Oil-based</option><option>Water-based</option><option>Gel</option><option>Semi-transparent</option><option>Solid</option><option>Other / not sure</option></select></label>
+        <label>Stain color<input name="stainColor" placeholder="Color name or number"></label>
+      </div>
+    </fieldset>
+
+    <fieldset><legend>Delivery</legend>
+      <label>Street address<input name="street" autocomplete="street-address"></label>
+      <div class="two">
+        <label>City<input name="city" autocomplete="address-level2"></label>
+        <label>State<input name="state" maxlength="2" autocomplete="address-level1"></label>
+      </div>
+      <label>ZIP<input name="zip" id="zip" inputmode="numeric" maxlength="5" required autocomplete="postal-code"></label>
+      <label class="radio"><input type="radio" name="method" value="freight" checked> Freight (crated, LTL)</label>
+      <label class="radio"><input type="radio" name="method" value="local"> Local delivery (within ~100 road miles of Norman, OK)</label>
+      <label class="radio"><input type="radio" name="method" value="pickup"> Pickup near Norman, OK (free)</label>
+      <label class="check" id="jobsiteRow"><input type="checkbox" name="jobsite" id="jobsite" checked> Jobsite or home with no loading dock / forklift (liftgate)</label>
+      <label>Notes<textarea name="notes" rows="3" placeholder="Job name, deadline, special sizes"></textarea></label>
+    </fieldset>
+
+    <fieldset><legend>Resale certificate (optional)</legend>
+      <p class="hint">Buying for resale? Add your permit details. Sales tax is handled on the final invoice.</p>
+      <label>Resale / sales-tax permit number<input name="resalePermit" autocomplete="off"></label>
+      <label>Issuing state<input name="resaleState" maxlength="2" placeholder="e.g. OK"></label>
+      <label class="check"><input type="checkbox" name="resaleCertToSend" value="yes"> I'll send my resale certificate</label>
+    </fieldset>
+
+    <div class="summary" id="summary" aria-live="polite"></div>
+    <p class="err" id="err" role="alert"></p>
+    <input type="text" name="website" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+    <button class="btn wide" type="submit" id="place">Place order</button>
+    <p class="hint">Placing an order sends it to us. We confirm freight, then send a secure payment link. No card is charged on this page.</p>
+  </form>
+</section>
+
+<section class="in contact">
+  <h2>Questions</h2>
+  <p>Email <a id="mail" href="mailto:wholesalebuilderbeam@agentmail.to">wholesalebuilderbeam@agentmail.to</a> or use the notes box above.</p>
+</section>
+</main>
+
+<footer><div class="in">&copy; 2026 <span data-brand>Wholesale Builder Beam</span> &middot; Oklahoma Made<br><small>Freight estimates use ZIP data from GeoNames (CC BY 4.0).</small></div></footer>
+<script src="config.js"></script>
+<script src="zip3.js"></script>
+<script src="calc.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
