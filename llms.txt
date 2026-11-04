@@ -20,6 +20,7 @@ Trade pricing is per linear foot by size and finish and is quote-based. The orde
 
 ## Key pages
 - [Home and order form](https://wholesalebuilderbeam.com/): Product details and the order form
+- [Sizing and spec guide](https://wholesalebuilderbeam.com/sizing.html): Beam sizes, construction, finishes, freight and ordering for builders
 - [Builder FAQ](https://wholesalebuilderbeam.com/#faq): Pricing, sizes, finishes, lead times, shipping and ordering
 
 ## Contact
