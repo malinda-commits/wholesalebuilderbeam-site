@@ -26,6 +26,7 @@ Trade pricing is per linear foot by size and finish and is quote-based. The orde
 - [Install guide](https://wholesalebuilderbeam.com/install.html): How decorative three-sided box beams are received, mounted over a cleat or blocking, cut or butted on site, and finished. General trade overview for builders. Beams are decorative and non-structural.
 - [Bid spec and takeoff guide](https://wholesalebuilderbeam.com/specify.html): What to list on a takeoff or bid before ordering decorative box beams: height, width, piece lengths and quantities, finish, and delivery or pickup. Guidance for builders, GCs and remodelers. Beams are decorative and non-structural. Not a stamped specification or an engineer letter.
 - [Wrap an existing beam](https://wholesalebuilderbeam.com/wrap.html): How to plan covering an existing beam line or framing with a decorative three-sided open-top box beam for appearance. Measure the beam line, choose a listed size that will cover it, then order. General trade overview for builders, GCs and remodelers. Beams are decorative and non-structural. The existing structure stays load-bearing. Not a stamped specification, engineer letter, or stamped install instruction.
+- [Prestained or unfinished](https://wholesalebuilderbeam.com/finish.html): How to choose prestained or unfinished decorative box beams and how to enter the stain brand, type and color on the order. Guidance for home builders, GCs and remodelers. Not a finish sample, a color-match guarantee, or a stamped specification.
 
 ## Contact
 - Email: wholesalebuilderbeam@agentmail.to
